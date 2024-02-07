@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbwLtg_WgGyOCr5vX4tUSCRYYJxr1_hLQLwsslsreOgR1KSBdYSvOwWw5oqWnUt2ILj9Ng/exec"
+>
+    <head>
+        <title>סקאוטינג</title>
+
+</head>
+    <body>
+
+
+    <label for="name"> שם סקאוטר: </label> 
+<br>
+    <input type="text" id="name" name="name">
+    
+    <br />
+    <br />
+    
+  <label for="number"> מספר קבוצה: </label>
+  <br>
+  <input type="number" id="number" name="number"> 
+
+<br />
+<br />
+
+<br>
+
+<p> <b> אוטונומי</b> 
+<br  />
+<br />
+ <label for="start"> :התחלה אוטונומי</label>
+      <br>
+      <select name="start" id="start">
+        <option value="0">בחירה--</option>
+         <option value="wall">קיר פיקסלים</option>
+           <option value="drone">נחיתת מטוס</option>
+      </select>
+
+<br  />
+<br  />
+      <label for="auto">האם יש אוטונומי?</label>
+      <br>
+      <select name="auto" id="auto">
+        <option value="no">לא</option>
+        <option value="yes">כן</option>
+      </select>
+      
+      <br>
+      <br>
+      
+          <style>
+.button1 {
+  background-color: #f7babb;
+}
+.button2 {
+  background-color: 
+}
+   .button3 {
+  background-color: #b0a5fa; 
+   }
+   .button4 {
+  background-color: #ffb5e6; 
+   }
+   .button5 {
+  background-color: #fcf8a9;
+   }
+</style>
+
+ <div style="color:black" class="plusminus-headline"> :פספוס איסוף</div>
+      <div class="number-input">
+        <button class="plusminus button2" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed auto" value="0" type="number"  >
+        <button class="plusminus button2" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+      
+ <div style="color:black" class="plusminus-headline">פיקסלים אוטונומי:</div>
+      <div class="number-input">
+        <button class="plusminus button1" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="pixels auto" value="0" type="number"  >
+        <button class="plusminus button1" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+ 
+
+<div style="color:black" class="plusminus-headline" > :פספוס קיר</div>
+      <div class="number-input">
+        <button class="plusminus button3" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed wall" value="0" type="number"  >
+        <button class="plusminus button3" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+ 
+
+
+
+      
+     <br>
+
+
+<br  />
+<br  />
+
+
+<p> טלאופ </p>
+<div style="color:black" class="plusminus-headline">פיקסלים טלאופ:</div>
+      <div class="number-input">
+        <button class="plusminus button4" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="pixels teleop" value="0" type="number"  >
+        <button class="plusminus button4" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+
+
+
+
+       <div style="color:black" class="plusminus-headline">:</div>פיקסל מפוספס טלאופ:
+      <div class="number-input">
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed teleop" value="0" type="number"  >
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+<br>
+
+
+
+
+<p><b>אחרי המקצה</b></p>
+
+<br />
+
+
+      <label for = driving> <b>נהיגה ושליטה ברובוט:</b></label>
+<br >
+
+
+      <div class="slidecontainer">
+ <input type="range" value="2" min="1" max="3" class="slider" name="robot control" oninput="this.nextElementSibling.value = this.value">
+<output> 2 </output>
+</div> 
+
+<br />
+<br />
+      
+      <label for= alliance > <b>שיתוף פעולה עם הברית <b> </label>
+      <div class="slidecontainer">
+<input type="range" value="2" min="1" max="3" class="slider" name="alliance cooperation" oninput="this.nextElementSibling.value = this.value">
+<output> 2 </output>
+</div>
+
+
+
+
+
+<style> /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #660CAB; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+   </style>
+      
+      
+      <style> 
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #DCBFF2; /* purple  background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;</style>
+      
+      <br />
+      
+      
+      
+      <label for="notes">הערות:</label>
+<br />
+
+<textarea id="notes" name="notes" rows="4" cols="45">
+</textarea>
+
+<br />
+      
+      
+     <button type="submit">Send</button>
+</form>
+    
+    </body>
+</html>
