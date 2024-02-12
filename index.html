@@ -54,34 +54,34 @@
       
           <style>
 .button1 {
-  background-color: #f7babb;
+  background-color: #fcf8a9 ;
 }
 .button2 {
-  background-color: 
+  background-color: #e1f5fe;
 }
    .button3 {
-  background-color: #b0a5fa; 
+  background-color: #66bb6a; 
    }
    .button4 {
   background-color: #ffb5e6; 
    }
    .button5 {
-  background-color: #fcf8a9;
+  background-color: #ce93d8;
    }
 </style>
 
  <div style="color:black" class="plusminus-headline"> :פספוס איסוף</div>
       <div class="number-input">
-        <button class="plusminus button2" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
-        <input class="quantity" min="0" max="50" name="missed auto" value="0" type="number"  >
-        <button class="plusminus button2" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+        <button class="plusminus button1" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed intake" value="0" type="number"  >
+        <button class="plusminus button1" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
      <br>
       
  <div style="color:black" class="plusminus-headline">פיקסלים אוטונומי:</div>
       <div class="number-input">
-        <button class="plusminus button1" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <button class="plusminus button2" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
         <input class="quantity" min="0" max="50" name="pixels auto" value="0" type="number"  >
-        <button class="plusminus button1" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+        <button class="plusminus button2" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
      <br>
  
 
@@ -115,12 +115,16 @@
 
 
 
-       <div style="color:black" class="plusminus-headline">:</div>פיקסל מפוספס טלאופ:
+       <div style="color:black" class="plusminus-headline">:</div>:פספוס\טעות
       <div class="number-input">
         <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
         <input class="quantity" min="0" max="50" name="missed teleop" value="0" type="number"  >
         <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
      <br>
+<br>
+
+
+
 <br>
 
 
@@ -184,7 +188,7 @@
       <label for="notes">הערות:</label>
 <br />
 
-<textarea id="notes" name="notes" rows="4" cols="45">
+<textarea id="notes" name="notes" rows="7" cols="35">
 </textarea>
 
 <br />
