@@ -4,7 +4,7 @@
 <html>
     <form 
   method="POST" 
-  action="https://script.google.com/macros/s/AKfycbwLtg_WgGyOCr5vX4tUSCRYYJxr1_hLQLwsslsreOgR1KSBdYSvOwWw5oqWnUt2ILj9Ng/exec"
+  action="https://script.google.com/macros/s/AKfycbyLL_JPksNod4iwsGatXWHaexZEurJAl2cC4RmkQJvJ-hDfTz8zO8wLD0gB9Ry9wd9Bmg/exec"
 >
     <head>
         <title>סקאוטינג</title>
@@ -25,6 +25,10 @@
   <input type="number" id="number" name="number"> 
 
 <br />
+ <label for="match num"> מספר מקצה: </label>
+  <br>
+  <input type="number" id="match num" name="match num"> 
+
 <br />
 
 <br>
@@ -45,8 +49,8 @@
       <label for="auto">האם יש אוטונומי?</label>
       <br>
       <select name="auto" id="auto">
+           <option value="yes">כן</option>
         <option value="no">לא</option>
-        <option value="yes">כן</option>
       </select>
       
       <br>
@@ -54,22 +58,31 @@
       
           <style>
 .button1 {
-  background-color: #fcf8a9 ;
+  background-color:  #FFF06D;
 }
 .button2 {
   background-color: #e1f5fe;
 }
    .button3 {
-  background-color: #66bb6a; 
+  background-color: #b1fcc1; 
    }
    .button4 {
-  background-color: #ffb5e6; 
+  background-color: #66bb6a; 
    }
    .button5 {
   background-color: #ce93d8;
    }
+ .button6 {
+  background-color: #ffb5e6;
+}
+  .button7 {
+  background-color: #f7e1cd;
+   
+   }
+
 </style>
 
+#fcf8a9
  <div style="color:black" class="plusminus-headline"> :פספוס איסוף</div>
       <div class="number-input">
         <button class="plusminus button1" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
@@ -77,24 +90,29 @@
         <button class="plusminus button1" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
      <br>
       
- <div style="color:black" class="plusminus-headline">פיקסלים אוטונומי:</div>
+ <div style="color:black" class="plusminus-headline">פיקסלים סטייג':</div>
       <div class="number-input">
         <button class="plusminus button2" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
-        <input class="quantity" min="0" max="50" name="pixels auto" value="0" type="number"  >
+        <input class="quantity" min="0" max="50" name="pixels stage auto" value="0" type="number"  >
         <button class="plusminus button2" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+
+ <div style="color:black" class="plusminus-headline"> פיקסלים קיר:</div>
+      <div class="number-input">
+        <button class="plusminus button3" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="pixels wall auto" value="0" type="number"  >
+        <button class="plusminus button3" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
      <br>
  
 
 <div style="color:black" class="plusminus-headline" > :פספוס קיר</div>
       <div class="number-input">
-        <button class="plusminus button3" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
-        <input class="quantity" min="0" max="50" name="missed wall" value="0" type="number"  >
-        <button class="plusminus button3" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+        <button class="plusminus button4" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed wall auto" value="0" type="number"  >
+        <button class="plusminus button4" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+  
      <br>
- 
-
-
-
       
      <br>
 
@@ -104,31 +122,31 @@
 
 
 <p> טלאופ </p>
-<div style="color:black" class="plusminus-headline">פיקסלים טלאופ:</div>
-      <div class="number-input">
-        <button class="plusminus button4" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
-        <input class="quantity" min="0" max="50" name="pixels teleop" value="0" type="number"  >
-        <button class="plusminus button4" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
-     <br>
 
 
-
-
-
-       <div style="color:black" class="plusminus-headline">:</div>:פספוס\טעות
+   <div style="color:black" class="plusminus-headline">:פספוס\טעות</div>
       <div class="number-input">
         <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
         <input class="quantity" min="0" max="50" name="missed teleop" value="0" type="number"  >
         <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
      <br>
+
+<div style="color:black" class="plusminus-headline">פיקסלים סטייג:</div>
+      <div class="number-input">
+        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="pixels stage tele" value="0" type="number"  >
+        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+<div style="color:black" class="plusminus-headline"> פיקסל קיר:</div>
+      <div class="number-input">
+        <button class="plusminus button7" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="pixels wall tele" value="0" type="number"  >
+        <button class="plusminus button7" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
 <br>
-
-
-
 <br>
-
-
-
 
 <p><b>אחרי המקצה</b></p>
 
@@ -137,8 +155,6 @@
 
       <label for = driving> <b>נהיגה ושליטה ברובוט:</b></label>
 <br >
-
-
       <div class="slidecontainer">
  <input type="range" value="2" min="1" max="3" class="slider" name="robot control" oninput="this.nextElementSibling.value = this.value">
 <output> 2 </output>
@@ -147,7 +163,7 @@
 <br />
 <br />
       
-      <label for= alliance > <b>שיתוף פעולה עם הברית <b> </label>
+      <label for= alliance > <b>שיתוף פעולה עם הברית </b> </label>
       <div class="slidecontainer">
 <input type="range" value="2" min="1" max="3" class="slider" name="alliance cooperation" oninput="this.nextElementSibling.value = this.value">
 <output> 2 </output>
