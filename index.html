@@ -78,9 +78,28 @@
 }
   .button7 {
   background-color: #f7e1cd;
-   
-   }
 
+   }
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #660CAB; 
+  cursor: pointer; 
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #DCBFF2; /* purple  background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
 </style>
 
 
@@ -156,42 +175,13 @@
 
 <br />
 <br />
-      
-      <label for= alliance > <b>שיתוף פעולה עם הברית </b> </label>
-      <div class="slidecontainer">
+<label for= alliance > <b>שיתוף פעולה עם הברית </b> </label>
+<div class="slidecontainer">
 <input type="range" value="2" min="1" max="3" class="slider" name="alliance cooperation" oninput="this.nextElementSibling.value = this.value">
 <output> 2 </output>
-</div>
-
-
-<style> /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
-  appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #660CAB; /* Green background */
-  cursor: pointer; /* Cursor on hover */
-   </style>
-      
-      
-      <style> 
-/* The slider itself */
-.slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
-  appearance: none;
-  width: 50%; /* Full-width */
-  height: 25px; /* Specified height */
-  background: #DCBFF2; /* purple  background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
-    </style>
-      
+</div>      
       <br />
-      
-      <label for="notes">הערות:</label>
+       <label for="notes">הערות:</label>
 <br />
 
 <textarea id="notes" name="notes" rows="10" cols="25">
