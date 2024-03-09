@@ -78,8 +78,11 @@
 }
   .button7 {
   background-color: #f7e1cd;
-
    }
+ .button8 {
+  background-color: #ffb5e6;
+}
+              
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
@@ -140,13 +143,7 @@
 <p> טלאופ </p>
 
 
-   <div style="color:black" class="plusminus-headline">:פספוס\טעות</div>
-      <div class="number-input">
-        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
-        <input class="quantity" min="0" max="50" name="missed teleop" value="0" type="number"  >
-        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
-     <br>
-
+ 
 <div style="color:black" class="plusminus-headline">פיקסלים סטייג:</div>
       <div class="number-input">
         <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
@@ -162,6 +159,19 @@
      <br>
 <br>
 <br>
+            <div style="color:black" class="plusminus-headline">:פספוס\טעות</div>
+      <div class="number-input">
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed teleop" value="0" type="number"  >
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+  <div style="color:black" class="plusminus-headline">:הריסת מוזיאק</div>
+      <div class="number-input">
+        <button class="plusminus button8" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed mosiac" value="0" type="number"  >
+        <button class="plusminus button8" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
 
 <p><b>אחרי המקצה</b></p>
 
