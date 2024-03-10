@@ -146,26 +146,23 @@
  
 <div style="color:black" class="plusminus-headline">פיקסלים סטייג:</div>
       <div class="number-input">
-        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
         <input class="quantity" min="0" max="50" name="pixels stage tele" value="0" type="number"  >
-        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
      <br>
 
 <div style="color:black" class="plusminus-headline"> פיקסל קיר:</div>
       <div class="number-input">
-        <button class="plusminus button7" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
         <input class="quantity" min="0" max="50" name="pixels wall tele" value="0" type="number"  >
-        <button class="plusminus button7" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
      <br>
-<br>
-<br>
             <div style="color:black" class="plusminus-headline">:פספוס\טעות</div>
       <div class="number-input">
-        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <button class="plusminus button7" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
         <input class="quantity" min="0" max="50" name="missed teleop" value="0" type="number"  >
-        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+        <button class="plusminus button7" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
      <br>
-
   <div style="color:black" class="plusminus-headline">:הריסת מוזיאק</div>
       <div class="number-input">
         <button class="plusminus button8" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
@@ -200,26 +197,6 @@
 <br />
     
   <input type="submit" name="myButton" value="Submit">
-  <input type="button" value="Reset" onclick="resetForm(this.form);">
-
-
-          
-          <script>
-  var checkForm = function(form) { /* Submit button was clicked */
-
-    //
-    // check form input values
-    //
-
-    form.myButton.disabled = true;
-    form.myButton.value = "Please wait...";
-    return true;
-  };
-
-  var resetForm = function(form) { /* Reset button was clicked */
-    form.myButton.disabled = false;
-    form.myButton.value = "Submit";
-  };
 
 </script>
 </form>
