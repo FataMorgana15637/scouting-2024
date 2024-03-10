@@ -196,14 +196,11 @@
 
 <br />
           
-     <button id="butt" type="submit">Submit</button>
-<script> var butt = document.getElementById('mySubmit');
-
-butt.addEventListener('click', function(event) {
-    event.target.disabled = true;
-});
-</script>
-
+   <button id="submit" type="submit"> submit</button>
+      <script> $('#submit').click(function() {
+        $(this).attr('disabled','disabled');
+}); 
+      </script>   
 </form>
     
     </body>
