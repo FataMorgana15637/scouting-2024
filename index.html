@@ -4,59 +4,46 @@
   method="POST" 
   action="https://script.google.com/macros/s/AKfycbyLL_JPksNod4iwsGatXWHaexZEurJAl2cC4RmkQJvJ-hDfTz8zO8wLD0gB9Ry9wd9Bmg/exec"
 >
-      <meta name="viewport" content="width=device-width, initial-scale=1.5, maximum-scale=1.5, user-scalable=no"> 
-
-    <head>
-        <title>סקאוטינג</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.5, maximum-scale=1.5, user-scalable=no"> 
+<head>
+<title>סקאוטינג</title>
 </head>
-    <body>
-
-
-    <label for="name"> שם סקאוטר: </label> 
+<body>
+<label for="name"> שם סקאוטר: </label> 
 <br>
-    <input type="text" id="name" name="name">
-    
-    <br />
-    <br />
-    
-  <label for="number"> מספר קבוצה: </label>
-  <br>
-  <input type="number" id="number" name="number"> 
-
-<br />
- <label for="match num"> מספר מקצה: </label>
-  <br>
-  <input type="number" id="match num" name="match num"> 
-
-<br />
-
+<input type="text" id="name" name="name">
+<br/>
+<br />   
+<label for="number"> מספר קבוצה: </label>
 <br>
-
+<input type="number" id="number" name="number"> 
+<br />
+<label for="match num"> מספר מקצה: </label>
+<br>
+<input type="number" id="match num" name="match num"> 
+<br />
+<br>
 <p> <b> אוטונומי</b> 
 <br  />
 <br />
- <label for="start"> :התחלה אוטונומי</label>
-      <br>
-      <select name="start" id="start">
-        <option value="0">בחירה--</option>
-         <option value="wall">קיר פיקסלים</option>
-           <option value="drone">נחיתת מטוס</option>
-      </select>
-
+<label for="start"> :התחלה אוטונומי</label>
+<br>
+<select name="start" id="start">
+<option value="0">בחירה--</option>
+<option value="wall">קיר פיקסלים</option>
+<option value="drone">נחיתת מטוס</option>
+</select>
 <br  />
 <br  />
-      <label for="auto">האם יש אוטונומי?</label>
-      <br>
-      <select name="auto" id="auto">
-            <option value="0">בחירה--</option>
-           <option value="yes">כן</option>
-        <option value="no">לא</option>
-      </select>
-      
-      <br>
-      <br>
-      
+<label for="auto">האם יש אוטונומי?</label>
+<br>
+<select name="auto" id="auto">
+<option value="0">בחירה--</option>
+<option value="yes">כן</option>
+<option value="no">לא</option>
+</select>    
+<br>
+<br>     
           <style>
 .button1 {
   background-color:  #FFF06D;
@@ -81,6 +68,8 @@
    }
  .button8 {
   background-color: #FB8D65;
+ .button9 {
+ background-color: #ff9980;
 }
               
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
@@ -173,10 +162,10 @@
 <p><b>אחרי המקצה</b></p>
 
 <br />
-      <label for = driving> <b>נהיגה ושליטה ברובוט:</b></label>
+<label for = driving> <b>נהיגה ושליטה ברובוט:</b></label>
 <br >
-      <div class="slidecontainer">
- <input type="range" value="2" min="1" max="3" class="slider" name="robot control" oninput="this.nextElementSibling.value = this.value">
+<div class="slidecontainer">
+<input type="range" value="2" min="1" max="3" class="slider" name="robot control" oninput="this.nextElementSibling.value = this.value">
 <output> 2 </output>
 </div> 
 
@@ -187,21 +176,25 @@
 <input type="range" value="2" min="1" max="3" class="slider" name="alliance cooperation" oninput="this.nextElementSibling.value = this.value">
 <output> 2 </output>
 </div>      
-      <br />
-       <label for="notes">הערות:</label>
+<br  />
+<br  />
+<div style="color:black" class="plusminus-headline">התנגשות בקיר</div>
+<div class="number-input">
+<button class="plusminus button9" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+<input class="quantity" min="0" max="50" name="wall bump" value="0" type="number"  >
+<button class="plusminus button9" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+<br>
 <br />
-
+<label for="notes">הערות:</label>
+<br />
 <textarea id="notes" name="notes" rows="10" cols="25">
 </textarea>
-
-<br />
-          
-   <button id="submit" type="submit"> submit</button>
-      <script> $('#submit').click(function() {
-        $(this).attr('disabled','disabled');
+<br />         
+<button id="submit" type="submit"> submit</button>
+<script> $('#submit').click(function() {
+ $(this).attr('disabled','disabled');
 }); 
-      </script>   
-</form>
-    
-    </body>
+</script>   
+</form>   
+</body>
 </html>
