@@ -72,6 +72,9 @@
  .button9 {
  background-color: #ffcce0;
 }
+               .button10 {
+ background-color:#33d6ff;
+}
               
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
 .slider::-webkit-slider-thumb {
@@ -124,7 +127,14 @@
         <button class="plusminus button4" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
         <input class="quantity" min="0" max="50" name="missed wall auto" value="0" type="number"  >
         <button class="plusminus button4" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
-  
+   <br>
+      
+          <div style="color:black" class="plusminus-headline">  <b> :טעות חמורה</b> </div>
+      <div class="number-input">
+        <button class="plusminus button10" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="mistake auto" value="0" type="number"  >
+        <button class="plusminus button10" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
      <br>
      <br>
 <br  />
@@ -175,13 +185,6 @@
 <input type="range" value="2" min="1" max="3" class="slider" name="robot control" oninput="this.nextElementSibling.value = this.value">
 <output> 2 </output>
 </div> 
-<br />
-<br />
-<label for= alliance > <b>שיתוף פעולה עם הברית </b> </label>
-<div class="slidecontainer">
-<input type="range" value="2" min="1" max="3" class="slider" name="alliance cooperation" oninput="this.nextElementSibling.value = this.value">
-<output> 2 </output>
-</div>      
 <br>
 <br />
 <label for="notes">הערות:</label>
